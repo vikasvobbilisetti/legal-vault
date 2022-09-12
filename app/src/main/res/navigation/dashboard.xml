@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard.xml">
+
+    <fragment
+        android:id="@+id/dashboardSettings"
+        android:name="com.ziroh.legalvault.dashboard.DashboardSettings"
+        tools:layout="@layout/fragment_dashboard_settings"
+        android:label="fragment_dashboard_settings">
+        <action
+            android:id="@+id/action_dashboardSettings_to_dashboardInternalSettings"
+            app:destination="@id/dashboardInternalSettings" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardInternalSettings"
+        android:name="com.ziroh.legalvault.dashboard.DashboardInternalSettings"
+        tools:layout="@layout/fragment_dashboard_internal_settings"
+        android:label="fragment_dashboard_internal_settings" />
+</navigation>

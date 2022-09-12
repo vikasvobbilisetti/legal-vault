@@ -1,3 +1,120 @@
 <resources>
     <string name="app_name">LegalVault</string>
+
+    <!-- Login Page -->
+    <string name="welcome">Welcome</string>
+    <string name="to_the_vaul">to the vault.</string>
+    <string name="company_nam">Company name</string>
+    <string name="email_addre">Email address</string>
+    <string name="already_hav">Already have an account?</string>
+    <string name="sign_in">Sign in</string>
+
+    <!-- Email Verification -->
+    <string name="time_to_ver">Time to verify your account.</string>
+    <string name="we_have_sen">We have sent a one-time password\nto your email address.</string>
+    <string name="enter_it_be">Enter it below</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="congrats">Congrats!</string>
+    <string name="your_email_add">Your email address is successfully verified</string>
+    <string name="next">Next</string>
+    <string name="incorrect_otp">Incorrect OTP. Please try again.</string>
+
+    <!-- User Registration -->
+    <string name="create_user">Create username</string>
+    <string name="create_pass">Create password</string>
+    <string name="confirm_pas">Confirm password</string>
+    <string name="let_s_creat">Let\'s create your admin profile now.</string>
+    <string name="ziroh_com">\@ziroh.com</string>
+    <string name="password_is">Password is not in the requested format.</string>
+    <string name="password_do">Password do not match.</string>
+    <string name="you_need_th">You need this username during sign in. Please record it somewhere safe.</string>
+    <string name="your_passwo">Your password should contain</string>
+    <string name="uppercase_c">1 uppercase character</string>
+    <string name="lowercase_c">2 lowercase characters</string>
+    <string name="special_cha">2 special characters</string>
+    <string name="numbers">2 numbers</string>
+    <string name="hint">Hint</string>
+
+    <!-- Add employee, partner, or, client -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="great_your">Great, your account is almost ready</string>
+    <string name="let_us">Let\'s now invite your colleagues, and clients here</string>
+    <string name="employee">Employee</string>
+    <string name="add">Add</string>
+    <string name="skip">SKIP</string>
+    <string name="client">Client</string>
+    <string name="partner">Partner</string>
+
+    <!-- Error Pages -->
+    <string name="oops_someth">Oops, something went \nwrong.</string>
+    <string name="sorry_about">Sorry about that, Please try again or report the issue</string>
+    <string name="go_to_dashb">Go to Dashboard</string>
+    <string name="error_that_">404 Error, That page is \nunknown or does not exist</string>
+    <string name="sorry_about2">Sorry about that, but the page you looking for is available</string>
+
+    <!-- Addition Pages -->
+    <string name="secure_your">Secure your employees.</string>
+    <string name="updated_det">Updated details</string>
+    <string name="enter_detai">Enter details</string>
+    <string name="name">Name</string>
+    <string name="position">Position</string>
+    <string name="date_of_bir">Date of Birth (optional)</string>
+    <string name="back">BACK</string>
+    <string name="view_more">View more</string>
+    <string name="go_to_dashboard">Go to Dashboard</string>
+    <string name="add_more">Add more</string>
+    <string name="save">Save</string>
+    <string name="name_info">Name</string>
+    <string name="email_info">Email id</string>
+
+    <!-- Dashboard Pages -->
+    <string name="navi_open">Open Navigation Drawer</string>
+    <string name="navi_close">Close Navigation Drawer</string>
+    <string name="secure_your_clients">Secure your clients.</string>
+    <string name="secure_your_partners">Secure your partners.</string>
+    <string name="super_admin">Super Admin</string>
+    <string name="about_cpa">About CPA Vault</string>
+    <string name="ashiq_shibi">Ashiq Shibin</string>
+    <string name="name_vault_">Name@vault.com</string>
+    <string name="team_detail">Team Details</string>
+    <string name="team_name">Team Name</string>
+    <string name="ziroh_labs">Ziroh Labs</string>
+    <string name="team_admin_">Team Admin\'s</string>
+    <string name="members">Members</string>
+    <string name="search_for_">Search for team, admin</string>
+    <string name="caption_1">Team Name</string>
+    <string name="caption_2">Admin</string>
+
+    <!-- Profile Pages -->
+    <string name="prof_pass_string">A link has been generated to reset the password</string>
+    <string name="prof_remove">The selected user will be removed from the vault</string>
+
+    <string name="aboutLV_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel feugiat leo. Maecenas tristique ac velit ac sagittis. Ut magna ipsum, mattis
+ut rutrum eget, iaculis a ante. Mauris ac dapibus lectus, a condimentum enim. Cras sed tellus urna. Praesent consequat, sapien id tempus
+ultricies, arcu ante porta justo, at tristique dui ex eget enim. Aliquam erat volutpat. In hac habitasse platea dictumst.</string>
+
+    <string name="aboutLV_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent viverra neque a nulla rhoncus aliquam. Vestibulum ante ipsum primis in
+faucibus orci luctus et ultrices posuere cubilia curae; Etiam placerat, est quis fermentum porta, leo urna ornare metus, vitae imperdiet nunc
+odio eu nibh. Etiam purus dolor, posuere non mollis sit amet, condimentum sed nisl. In sit amet neque lacus. Ut est velit, tincidunt quis
+varius eu, viverra ut nisl. Nulla efficitur pulvinar iaculis. Praesent finibus cursus mi, non vulputate libero sodales vel. Proin id tellus in nibh
+mollis porta.</string>
+
+    <string name="aboutLV_3">Maecenas condimentum nulla vitae elit vehicula accumsan. In vulputate sodales nisl rutrum ultricies. Etiam vel diam varius, pellentesque
+quam sit amet, tristique odio. Nam porttitor, augue a tristique pellentesque, augue ex ultrices metus, sed dictum turpis ex eu est. Mauris
+quis risus sit amet turpis aliquet faucibus vitae eget augue. Praesent non lobortis ligula. Donec in risus erat. Vivamus molestie odio quis
+laoreet gravida. Nulla facilisis tellu</string>
+
+    <string name="confirm_changes">Confirm Changes</string>
+    <string name="remove_user_settings">The selected user will be removed from the super admin</string>
+
+    <string-array name="settings">
+        <item>Partners</item>
+        <item>Employees</item>
+    </string-array>
+
 </resources>

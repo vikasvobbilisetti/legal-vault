@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/contact_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/dashboard_manage_member_contact"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/admin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/lato"
+        android:text="Ashiq Shibin"
+        app:layout_constraintBottom_toBottomOf="@+id/contact_image"
+        app:layout_constraintStart_toEndOf="@+id/contact_image"
+        app:layout_constraintTop_toTopOf="@+id/contact_image" />
+
+    <TextView
+        android:id="@+id/admin_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="113dp"
+        android:layout_toRightOf="@+id/admin_name"
+        android:text="Name@vault.com"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_name"
+        app:layout_constraintStart_toStartOf="@+id/admin_name"
+        app:layout_constraintTop_toTopOf="@+id/admin_name" />
+
+    <ImageView
+        android:id="@+id/delete_admin"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toRightOf="@id/admin_id"
+        android:clickable="true"
+        android:src="@drawable/delete_vector"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintStart_toStartOf="@+id/admin_name"
+        app:layout_constraintTop_toTopOf="@+id/admin_id"
+        app:layout_constraintVertical_bias="0.6"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

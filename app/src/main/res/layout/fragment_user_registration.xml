@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.UserRegistration">
+
+    <ImageView
+        android:id="@+id/image_1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/user_registration_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/let_s_creat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/let_s_creat"
+        android:textColor="@color/dark_brown"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/create_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints=""
+        android:background="@drawable/user_registration_text_box"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/create_user"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingVertical="9dp"
+        android:paddingStart="22dp"
+        android:textColor="@color/light_brown"
+        android:textColorHint="@color/light_brown"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/let_s_creat"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <EditText
+        android:id="@+id/create_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints=""
+        android:background="@drawable/user_registration_text_box"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/create_pass"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingVertical="9dp"
+        android:paddingStart="22dp"
+        android:textColor="@color/light_brown"
+        android:textColorHint="@color/light_brown"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/let_s_creat"
+        app:layout_constraintVertical_bias="0.30"
+        tools:ignore="RtlSymmetry,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/confirm_pas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/user_registration_text_box"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/confirm_pas"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingVertical="9dp"
+        android:paddingStart="22dp"
+        android:textColor="@color/light_brown"
+        android:textColorHint="@color/light_brown"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        app:layout_constraintTop_toTopOf="@+id/let_s_creat" />
+
+    <TextView
+        android:id="@+id/next3"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:background="@drawable/user_login_next_box"
+        android:clickable="true"
+        android:fontFamily="@font/poppins"
+        android:paddingTop="5dp"
+        android:text="@string/next"
+        android:textAlignment="center"
+        android:textColor="@color/dark_brown"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/let_s_creat"
+        app:layout_constraintVertical_bias="0.60" />
+
+    <ImageView
+        android:id="@+id/eye_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/confirm_pas"
+        android:layout_alignEnd="@+id/confirm_pas"
+        android:layout_alignBottom="@+id/confirm_pas"
+        android:layout_marginEnd="15dp"
+        android:onClick="pass"
+        android:src="@drawable/user_registration_eye_1"
+        app:layout_constraintBottom_toBottomOf="@+id/confirm_pas"
+        app:layout_constraintEnd_toEndOf="@+id/confirm_pas"
+        app:layout_constraintTop_toTopOf="@+id/confirm_pas" />
+
+    <ImageView
+        android:id="@+id/eye_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/create_user"
+        android:layout_alignEnd="@+id/create_user"
+        android:layout_alignBottom="@+id/create_user"
+        android:layout_marginEnd="15dp"
+        android:onClick="pass2"
+        android:src="@drawable/user_registration_eye_1"
+        app:layout_constraintBottom_toBottomOf="@+id/create_pass"
+        app:layout_constraintEnd_toEndOf="@+id/create_pass"
+        app:layout_constraintTop_toTopOf="@+id/create_pass" />
+
+    <ImageView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/create_pass"
+        android:layout_alignEnd="@+id/create_pass"
+        android:layout_alignBottom="@+id/create_pass"
+        android:layout_marginEnd="15dp"
+        android:onClick="info1dis"
+        android:src="@drawable/user_registration_info"
+        app:layout_constraintBottom_toBottomOf="@+id/create_user"
+        app:layout_constraintEnd_toEndOf="@+id/create_user"
+        app:layout_constraintTop_toTopOf="@+id/create_user" />
+
+    <TextView
+        android:id="@+id/password_is"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_pass"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/password_is"
+        android:textColor="@color/red"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/create_pass"
+        app:layout_constraintTop_toBottomOf="@+id/create_pass" />
+
+    <TextView
+        android:id="@+id/password_do"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirm_pas"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/password_do"
+        android:textColor="@color/red"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/confirm_pas"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_pas" />
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_pass"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/hint"
+        android:clickable="true"
+        android:onClick="info2dis"
+        android:textColor="@color/ocean_blue"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/create_pass"
+        app:layout_constraintTop_toBottomOf="@+id/create_pass" />
+
+    <TextView
+        android:id="@+id/infoDisplay1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/user_registration_display_box"
+        android:padding="4dp"
+        android:text="@string/you_need_th"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@+id/info"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        android:visibility="gone"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/infoDisplay2"
+        android:layout_width="201dp"
+        android:layout_height="100dp"
+        android:background="@drawable/user_registration_display_box_2"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/eye_1"
+        app:layout_constraintTop_toBottomOf="@+id/hint">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="9dp"
+            android:text="@string/your_passwo"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/d1"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/user_registration_dot"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/d2"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/user_registration_dot"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/d1" />
+
+        <TextView
+            android:id="@+id/d3"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/user_registration_dot"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/d2" />
+
+        <TextView
+            android:id="@+id/d4"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/user_registration_dot"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/d3" />
+
+        <TextView
+            android:id="@+id/uppercase_c"
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="7dp"
+            android:gravity="top"
+            android:text="@string/uppercase_c"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/d1"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/lowercase_c"
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="3dp"
+            android:gravity="top"
+            android:text="@string/lowercase_c"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/d1"
+            app:layout_constraintTop_toBottomOf="@+id/uppercase_c"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/special_cha"
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="3dp"
+            android:gravity="top"
+            android:text="@string/special_cha"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/d1"
+            app:layout_constraintTop_toBottomOf="@+id/lowercase_c"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="3dp"
+            android:gravity="top"
+            android:text="@string/numbers"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/d1"
+            app:layout_constraintTop_toBottomOf="@+id/special_cha"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

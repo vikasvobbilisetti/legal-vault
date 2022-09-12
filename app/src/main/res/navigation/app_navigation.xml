@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation.xml"
+    app:startDestination="@id/userExistsLogin">
+
+    <fragment
+        android:id="@+id/userLogin"
+        android:name="com.ziroh.legalvault.login.UserLogin"
+        android:label="fragment_user_login"
+        tools:layout="@layout/fragment_user_login" >
+        <action
+            android:id="@+id/action_userLogin_to_addEmployee"
+            app:destination="@id/addEmployee" />
+        <action
+            android:id="@+id/action_userLogin_to_userExistsLogin"
+            app:destination="@id/userExistsLogin" />
+        <action
+            android:id="@+id/action_userLogin_to_userLoginResetPassword"
+            app:destination="@id/userLoginResetPassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/userExistsLogin"
+        android:name="com.ziroh.legalvault.login.UserExistsLogin"
+        android:label="fragment_user_exists_login"
+        tools:layout="@layout/fragment_user_exists_login" >
+        <action
+            android:id="@+id/action_userExistsLogin_to_userLogin"
+            app:destination="@id/userLogin" />
+        <action
+            android:id="@+id/action_userExistsLogin_to_emailVerification"
+            app:destination="@id/emailVerification" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailVerification"
+        android:name="com.ziroh.legalvault.login.EmailVerification"
+        android:label="fragment_email_verification"
+        tools:layout="@layout/fragment_email_verification" >
+        <action
+            android:id="@+id/action_emailVerification_to_emailCongrats"
+            app:destination="@id/emailCongrats" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEmployee"
+        android:name="com.ziroh.legalvault.addmembers.AddEmployee"
+        android:label="fragment_add_employee"
+        tools:layout="@layout/fragment_add_employee" >
+        <action
+            android:id="@+id/action_addEmployee_to_addPartner"
+            app:destination="@id/addPartner" />
+        <action
+            android:id="@+id/action_addEmployee_to_employeeAddition"
+            app:destination="@id/employeeAddition" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailCongrats"
+        android:name="com.ziroh.legalvault.login.EmailCongrats"
+        android:label="fragment_email_congrats"
+        tools:layout="@layout/fragment_email_congrats" >
+        <action
+            android:id="@+id/action_emailCongrats_to_userRegistration"
+            app:destination="@id/userRegistration" />
+    </fragment>
+    <fragment
+        android:id="@+id/userRegistration"
+        android:name="com.ziroh.legalvault.login.UserRegistration"
+        android:label="fragment_user_registration"
+        tools:layout="@layout/fragment_user_registration" >
+        <action
+            android:id="@+id/action_userRegistration_to_userLogin"
+            app:destination="@id/userLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/addClient"
+        android:name="com.ziroh.legalvault.addmembers.AddClient"
+        android:label="fragment_add_client"
+        tools:layout="@layout/fragment_add_client" >
+
+        <action
+            android:id="@+id/action_addClient_to_addPartner"
+            app:destination="@id/addPartner" />
+        <action
+            android:id="@+id/action_addClient_to_clientAddition"
+            app:destination="@id/clientAddition" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPartner"
+        android:name="com.ziroh.legalvault.addmembers.AddPartner"
+        android:label="fragment_add_partner"
+        tools:layout="@layout/fragment_add_partner" >
+
+        <action
+            android:id="@+id/action_addPartner_to_addClient"
+            app:destination="@id/addClient" />
+        <action
+            android:id="@+id/action_addPartner_to_addEmployee"
+            app:destination="@id/addEmployee" />
+        <action
+            android:id="@+id/action_addPartner_to_partnerAddition"
+            app:destination="@id/partnerAddition" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeeAddition"
+        android:name="com.ziroh.legalvault.addmembers.EmployeeAddition"
+        android:label="fragment_employee_addition"
+        tools:layout="@layout/fragment_employee_addition" >
+        <action
+            android:id="@+id/action_employeeAddition_to_addEmployee"
+            app:destination="@id/addEmployee" />
+        <action
+            android:id="@+id/action_employeeAddition_to_employeeExpanded"
+            app:destination="@id/employeeExpanded" />
+        <action
+            android:id="@+id/action_employeeAddition_self"
+            app:destination="@id/employeeAddition" />
+    </fragment>
+    <fragment
+        android:id="@+id/partnerAddition"
+        android:name="com.ziroh.legalvault.addmembers.PartnerAddition"
+        android:label="fragment_partner_addition"
+        tools:layout="@layout/fragment_partner_addition" >
+        <action
+            android:id="@+id/action_partnerAddition_to_partnerExpanded"
+            app:destination="@id/partnerExpanded" />
+        <action
+            android:id="@+id/action_partnerAddition_to_addPartner"
+            app:destination="@id/addPartner" />
+        <action
+            android:id="@+id/action_partnerAddition_self"
+            app:destination="@id/partnerAddition" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientAddition"
+        android:name="com.ziroh.legalvault.addmembers.ClientAddition"
+        android:label="fragment_client_addition"
+        tools:layout="@layout/fragment_client_addition" >
+        <action
+            android:id="@+id/action_clientAddition_to_clientExpanded"
+            app:destination="@id/clientExpanded" />
+        <action
+            android:id="@+id/action_clientAddition_to_addClient"
+            app:destination="@id/addClient" />
+        <action
+            android:id="@+id/action_clientAddition_self"
+            app:destination="@id/clientAddition" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeeExpanded"
+        android:name="com.ziroh.legalvault.addmembers.EmployeeExpanded"
+        android:label="fragment_employee_expanded"
+        tools:layout="@layout/fragment_employee_expanded" >
+        <action
+            android:id="@+id/action_employeeExpanded_to_addEmployee"
+            app:destination="@id/addEmployee" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientExpanded"
+        android:name="com.ziroh.legalvault.addmembers.ClientExpanded"
+        android:label="fragment_client_expanded"
+        tools:layout="@layout/fragment_client_expanded" >
+        <action
+            android:id="@+id/action_clientExpanded_to_addClient"
+            app:destination="@id/addClient" />
+    </fragment>
+    <fragment
+        android:id="@+id/partnerExpanded"
+        android:name="com.ziroh.legalvault.addmembers.PartnerExpanded"
+        android:label="fragment_partner_expanded"
+        tools:layout="@layout/fragment_partner_expanded" >
+        <action
+            android:id="@+id/action_partnerExpanded_to_addPartner"
+            app:destination="@id/addPartner" />
+    </fragment>
+    <fragment
+        android:id="@+id/userLoginResetPassword"
+        android:name="com.ziroh.legalvault.login.UserLoginResetPassword"
+        android:label="fragment_user_login_reset_password"
+        tools:layout="@layout/fragment_user_login_reset_password" >
+        <action
+            android:id="@+id/action_userLoginResetPassword_to_userLogin"
+            app:destination="@id/userLogin" />
+    </fragment>
+</navigation>

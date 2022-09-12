@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Button.White" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+    <style name="ashiq_shibi">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#444343</item>
+    </style>
+    <style name="caption">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#94795C</item>
+    </style>
+</resources>
